@@ -1,6 +1,9 @@
 exports.Principal = (req, res) => {
     res.status(200).render('Principal'); 
 };
-exports.gls = (req, res) => {
-    res.status(200).render('gls');
+exports.proa = (req, res) => {
+    res.status(200).render('proa');
+};
+exports.contactos = (req, res) => {
+    res.status(200).render('contactos'); 
 };
