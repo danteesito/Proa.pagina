@@ -7,3 +7,6 @@ exports.proa = (req, res) => {
 exports.contactos = (req, res) => {
     res.status(200).render('contactos'); 
 };
+exports.nosotros = (req, res) => {
+    res.status(200).render('nosotros'); 
+};
