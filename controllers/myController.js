@@ -10,3 +10,7 @@ exports.contactos = (req, res) => {
 exports.nosotros = (req, res) => {
     res.status(200).render('nosotros'); 
 };
+exports.estudios = (req, res) => {
+    res.status(200).render('estudios'); 
+};
+

@@ -1,0 +1,74 @@
+/* General */
+body {
+    background-color: #f7f9fc;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Títulos */
+h1, h3.section-title {
+    color: #0e2ba4; /* Azul principal */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #ef6d6d; /* rojo acento */
+    margin: 0.5rem auto 0;
+    border-radius: 4px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Íconos */
+.card-body::before {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+/* Textos destacados */
+.lead {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .card-body {
+        font-size: 0.95rem;
+        padding: 1.2rem;
+    }
+}
